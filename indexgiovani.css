@@ -1,0 +1,136 @@
+body{
+    background-color: #B2FFE0;
+    color: #642C93;
+    font-family: rewaley;
+    max-width: 100%;
+    margin: 0;
+    padding: 0px;
+}
+
+header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color:#642C93;
+}
+
+a:hover{
+    color: #000;
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscreva-se-btn:hover{
+    background-color: #B2FFE0;
+    color:#642C93;
+}
+
+h1{
+    font-weight: 200px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    align-content: normal;
+    justify-content: center;
+}
+
+.article{
+    display: flex;
+    margin: 0;
+}
+article h2{
+    justify-content: center;
+    font-size: 20px;
+    color:#000;
+
+}
+article p{
+    font-size: 24px;
+}
+h2{
+    padding: 15px;
+    font-size: 64px;
+    font-family: Ralewaybold;
+    padding: 5px;
+    margin:15px;
+    box-shadow: black;
+}
+
+
+p{
+    color: #000;
+    line-height: 20px;
+    margin:15px;
+    padding: 5px;
+}
+
+img{
+    width: 140px;
+    padding-left: 140px;
+}
+
+.container{
+    background: white;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    flex-direction:column; 
+    display: flex;
+    width: 520px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+span{
+    color: #642C93;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 98%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+    align-items: center;
+   
+}
+input{
+    margin-top: 18px;
+    height: 14px;
+    padding: 15px;
+    border-radius: 13px;
+    font-size: 14px;
+    background-color: #F0F3F8;
+}
+
+#subtitulo{
+    text-align: center;
+    font-size: 24px;
+    font-family: Ralewaybold;
+    font-weight: bold;
+}
+

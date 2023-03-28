@@ -1,45 +1,395 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
-<section>
-    <head>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business News - lead your business everyday, read the world today.</title>
+    
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="/index.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="container"><img src="#" alt=""></div>
+
+    <!-- início da nav bar -->
+
+    <nav>
+
+      <div>
+        <a class="azinho" href="#home">
+            <img class="logo1" src="imgs/title.svg" alt="logo business news">
+        </a>
+    </div>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"> &#9776 Menu</button>           
+        <div id="drop" class="dropdown-content">
+            <div class="show">
+                <a href="#">Sobre</a>        
+                <a href="#">Fale Conosco</a>
+                <a href="#">Login</a>
+                <a href="#">Download</a>
+                <a href="#">Política de Privacidade</a>
+            </div>
         </div>
-      </nav>
-    </head>
-</section>
+    </div>    
 
+    <!-- fim da nav bar-->
+
+    <div class="header">
+
+    </div>
+  </nav>
+  </header>
+
+  <main>
+  <div class="content">
+  
+   <section class="home">
+      <div class="slogan">
+        <h1>lead your <strong>business</strong> everyday<br> 
+        read the <strong>world</strong> today.</h1>
+      </div>
+      
+      <!-- formulário -->
+      
+    <form class="form1" action="" method="post">
+      <p>inscreva-se agora!</p>
+
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="name">
+        <label for="floatingInput">seu nome</label>
+      </div>
+
+      <div class="form-floating">
+        <input type="e-mail" class="form-control" id="floatinge-mail" placeholder="name@example.com">
+        <label for="floatingPassword">seu e-mail</label>
+      </div>
+
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingname" placeholder="name">
+        <label for="floatingPassword">nome de sua empresa</label>
+      </div>
+
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingtel" placeholder="telefone">
+        <label for="floatingPassword">seu telefone</label>
+      </div>
+
+      <button>
+        se inscreva!
+      </button>
+    </form>
+     
+      <!-- fim do formulário -->
+
+    <!-- vídeo da landing page-->
+
+      <video>
+        tba
+      </video>
+     
+    <!-- fim do vídeo da landing page-->
+     
+    </section>
+
+   <section class="featuresbolinhas">
+      <div class="features">
+        <h3 class="nuncaperca">NUNCA PERCA UMA NOTÍCIA!</h3>
+        <hr class="linha" width="40px">
+        <h2 class="suaempresanocomando">sua empresa no comando das <br>últimas tendências do <br>mercado!</h2>
+        
+        <div class="caixabolinhas">
+          <ul class="bolinhas">
+          
+            <div class="bolinha1">
+              <li><img src="/imgs/vantagemcomp.svg" alt="bolinha"></li>
+                <li class="titulobolinha"><p><strong>Vantagem Competitiva</strong></p></li>
+                <li class="textobolinha"><p>aos que têm acesso à esta ferramenta poderosa em mãos.</p></li>
+            </div>
+          
+            <div class="bolinha2">
+              <li><img src="/imgs/interesses.svg" alt="bolinha"></li>
+               <li class="titulobolinha"><p><strong>Interesses</strong></p></li>
+               <li class="textobolinha"><p>fique à vontade de selecionar todos os seus interesses!</p></li>
+            </div>
+
+            <div class="bolinha3">
+             <li><img src="/imgs/saibaantes.svg" alt="bolinha"></li>
+                <li class="titulobolinha"><p><strong>Saiba antes de todos</strong></p></li>
+                <li class="textobolinha"><p>receba suas notícias no momento que elas são publicadas!</p></li>
+           </div>
+ 
+            <div class="bolinha4">
+             <li><img src="/imgs/calendario.svg" alt="bolinha"></li>
+                <li class="titulobolinha"><p><strong>Calendário</strong></p></li>
+                <li class="textobolinha"><p>programe-se e saiba todas as datas comerciais, eventos e outros no Brasil!</p></li>
+            </div>
+
+            <div class="bolinha5">
+              <li><img src="/imgs/aportes.svg" alt="bolinha"></li>
+                <li class="titulobolinha"><p><strong>Aportes</strong></p></li>
+                <li class="textobolinha"><p>fique por dentro dos investimentos!</p></li>
+            </div>
+
+            <div class="bolinha6">
+              <li><img src="/imgs/entreoutros.svg" alt="bolinha"></li>
+                <li class="titulobolinha"><p><strong>Entre outros!</strong></p></li>
+                <li class="textobolinha"><p>bolsa de valores, crypto moedas, redes sociais, editoriais, e mais!</p></li>
+            </div>
+          
+          </ul>
+        </div>
+      </div>
+    </section>
+
+   <section class="tópicosecarrossel">
+    <div class="tópicos">
+      <h2>tópicos de sua escolha!</h2>
+    
+      <!-- carrossel -->
+      
+      
+      <!-- fim do carrossel -->
+    </section>
+    
+   <section class="resultados">
+      <div class="resultados">
+        <h3>”mas como vocês podem nos ajudar?”</h3>
+        <hr class="linha" width="40px">
+        <h2>simples, veja nossos resultados!</h2>
+        
+        <!-- números que mexem // preciso ajustar os nomes!!!!! -->
+        
+        <ul class="numeros">
+          <div class="numero1">
+            <li><p><strong>+500%</strong></p></li>
+            <li><p>de novos clicks a mais!</p></li>
+          </div>
+          
+          <div class="bolinha2">
+            <li><p><strong>Vantagem Competitiva</strong></p></li>
+            <li><p>aos que têm acesso à esta ferramenta poderosa em mãos.</p></li>
+          </div>
+
+          <div class="bolinha3">
+            <li><p><strong>Vantagem Competitiva</strong></p></li>
+            <li><p>aos que têm acesso à esta ferramenta poderosa em mãos.</p></li>
+          </div>
+ 
+          <div class="bolinha4">
+            <li><p><strong>Vantagem Competitiva</strong></p></li>
+            <li><p>aos que têm acesso à esta ferramenta poderosa em mãos.</p></li>
+          </div>
+
+          <div class="bolinha5">
+            <li><p><strong>Vantagem Competitiva</strong></p></li>
+            <li><p>aos que têm acesso à esta ferramenta poderosa em mãos.</p></li>
+          </div>
+
+          <div class="bolinha6">
+            <li><p><strong>Vantagem Competitiva</strong></p></li>
+            <li><p>aos que têm acesso à esta ferramenta poderosa em mãos.</p></li>
+          </div>
+          
+          <div class="frasefinal">
+            <li><p>tudo isso</p></li>
+            <li><p><strong>em apenas UM APLICATIVO</strong></p></li>
+          </div>
+        </ul>
+        
+        <!-- fim dos números que mexem -->
+        
+        <!-- formulário de e-mail -->       
+        
+        <form class="formNewsletter" action="" method="post">
+          <p>assine nossa <strong>newsletter</strong> e saiba mais!</p>
+
+          <div class="form-floating">
+            <input type="e-mail" class="form-control" id="floatinge-mail" placeholder="name@example.com">
+            <label for="floatingPassword">seu e-mail</label>
+          </div>
+        
+          <button>
+          assine!
+          </button>
+         </form>
+        
+         <!-- fim do formulário de e-mail -->
+    </section>
+      
+   <section class="empresasdepoimentos">
+    
+      <!-- lista de imagens de empresas/patrocínios -->
+
+     <ul class="linha1">
+       <li class="empresa1">
+        <img src="#" alt="empresa1">
+       </li>
+       
+       <li class="empresa2">
+        <img src="#" alt="empresa2">
+       </li>
+       
+       <li class="empresa3">
+        <img src="#" alt="empresa3">
+       </li>
+     </ul>
+     
+     <ul class="linha2">
+       <li class="empresa1">
+        <img src="#" alt="empresa1">
+       </li>
+       
+       <li class="empresa2">
+        <img src="#" alt="empresa2">
+       </li>
+       
+       <li class="empresa3">
+        <img src="#" alt="empresa3">
+       </li>
+     </ul>
+     
+     <ul class="linha3">
+       <li class="empresa1">
+        <img src="#" alt="empresa1">
+       </li>
+       
+       <li class="empresa2">
+        <img src="#" alt="empresa2">
+       </li>
+       
+       <li class="empresa3">
+        <img src="#" alt="empresa3">
+       </li>
+     </ul>
+     
+      <!-- fim da lista de imagens de empresas/patrocínios -->
+      <!-- carrossel de depoimentos -->
+     
+      a
+     
+      <!-- fim do carrossel de depoimentos -->
+     
+   </section>
+     
+   <section class="quemsomos">
+     
+     <div class="resposta">
+       <img src="#" alt="empresa3">
+       <p>criada com propósito de manter empresas e organizações sempre bem informadas, a BN mantém-se sempre atualizada para manter você inteirado sobre as mais importantes notícias do Brasil e do mundo.</p>
+     </div>
+     
+     <div class="identidade">
+       <div class="retangulobranco">
+         <p>trazer fatos totalmente relevantes para a sua empresa e a sua equipe, no principal e mais completo newsapp do Brasil!</p>
+       </div>
+     </div>
+     
+     <div class="prazer">
+       <div class="sei la">
+        <p>prazer em conhecê-lo!</p>
+       </div>
+     </div>
+         
+   </section>
+      
+   <section class="baixenossoapp">
+    
+    <div class="iphone">
+      <img src="#" alt="iphone">
+      <p>BAIXE NOSSO APP!</p>
+      <p>lead your business today, read the world everyday!</p>
+      <p>Informações do mundo dos negócios e da publicidade com inteligência e foco no que realmente interessa.</p>
+      <div class="qrcode e baixar">
+        
+      </div>
+      <p>disponível para download agora!</p>
+   
+   </section>
+     
+   <section class="formfinal">
+     
+    <!-- formulário de e-mail -->       
+        
+     <form class="formNewsletter" action="" method="post">
+      <p>quer ter o bn na sua empresa?</p>
+      <p>entre em contato com nosso time comercial!</p>
+       
+      <div class="form-floating">
+       <input type="text" class="form-control" id="floatingName" placeholder="name">
+       <label for="floatingPassword">seu nome</label>
+      </div>
+       
+      <div class="form-floating">
+       <input type="e-mail" class="form-control" id="floatinge-mail" placeholder="name@example.com">
+       <label for="floatingPassword">seu e-mail</label>
+      </div>
+       
+      <div class="form-floating">
+       <input type="text" class="form-control" id="floatingInput" placeholder="name">
+       <label for="floatingPassword">nome de sua empresa</label>
+      </div>
+       
+      <div class="form-floating">
+       <input type="text" class="form-control" id="floatingtel" placeholder="telefone">
+       <label for="floatingPassword">telefone</label>
+      </div>       
+        
+      <button>
+         inscreva-se!
+      </button>
+     </form>
+        
+     <!-- fim do formulário de e-mail  -->
+    
+   </section>
+      
+  </div>
+  </main>
+
+  <footer>
+    
+   <div class="logo e social media">
+     
+    <img src="#" alt="logo business news">
+     
+    <p>Business News: aplicativo de market information que monitora em tempo real, todos os tipos de mídias e veículos de comunicação, para levar informações do mundo dos negócios e da publicidade, com inteligência e foco no que realmente interessa.</p>
+     
+    <img src="#" alt="logo bn"> 
+    
+    <!-- listas e links do footer -->
+     
+     <ul class="linksesquerda">
+       <li>Mapa do Site</li>
+       <li>Sobre Nós</li>
+       <li>Blog</li>
+       <li>Soluções</li>
+       <li>Fale Conosco</li>
+       <li>Login</li>
+     </ul>
+     
+     <ul class="linksdireita">
+       <li>Trabalhe Conosco</li>
+       <li>Carreiras</li>
+       <li>Banco de Talentos</li>
+       <li>Parcerias</li>
+       <li>Indique A BUSINESS NEWS</li>
+       <li>Programa de Parcerias</li>
+     </ul>
+  
+    <!-- fim das listas e links do footer -->    
+
+    <p>Termos de Uso e Política de Privacidade
+contato@businessapp.com.br
+      ©2020 por BUSINESS NEWS LTDA. TODOS OS DIREITOS RESERVADOS. CNPJ: 02.273.776/0001-00</p>
+   
+  </footer>
+    
+</body>
 </html>

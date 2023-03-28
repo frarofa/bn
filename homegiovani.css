@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*,*{
+    
+    margin: 0;    
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.conteudo{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.menu{
+    width: 40%;
+    font-size: 1.25vw;           
+    display: flex;
+    justify-content: space-between;    
+}
+.menu a{
+    text-decoration: none;
+}
+
+.home{
+    background-color: #B2FFE0;
+}
+
+.sobre_nos{
+    background-color: white;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: space-between;        
+}
+.chamada_sobre_nos{
+    width: 50%;
+    padding-left: 40px;
+}
+.chamada_sobre_nos h2{
+    font-size: 2vw;
+    letter-spacing: 0.25ch;
+    padding-bottom: 3%;
+}
+
+.chamada_sobre_nos h1{
+    font-size: 3vw;
+    letter-spacing: 0.25ch;
+    color: #642c93;
+    font-weight: bolder;
+    
+}
+
+.video_demonstracao{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jornais{
+    background-color: #F0F3F8;
+    padding-top: 6%;
+    font-size: 1.5vw;
+    letter-spacing: 0.25ch;
+    color: #642c93;
+    text-align: center;
+}
+
+.imagens_jornais{
+    width: 100%;
+    padding: 0% 2%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.funcionalidades{
+    width: 100%;    
+    background-color: #ECFFF8;
+}
+
+.itensfuncionalidades{
+    width: 100%;
+    background-color: #ECFFF8;
+    display: flex;
+    justify-content: space-between;
+}
+.saiba{
+   
+    padding-left: 40px;
+    padding-top: 3%;
+    padding-bottom: 100px;;
+    letter-spacing: 0.40ch;
+    font-size: 3vw;       
+    background-color: #ECFFF8;    
+}
+
+.saiba span{
+    color: #642c93;
+}
+
+.celular{
+    width: 50%;
+    padding-left: 190px;    
+    display: flex;
+    justify-content: baseline;
+}
+.container{      
+    width: 70%;  
+    margin-right: 40px;
+    margin-bottom: 40px;
+    font-size: 1.25vw;
+    background-color: white;
+    border-radius: 40px;
+    font-size: 1.5vw;
+}
+
+.container ul li{
+    display: flex;
+    justify-content: left;        
+    align-items: center;
+}
+
+.container img{
+    padding: 20px;
+}
+.container p{
+    padding-left: 20px;
+    text-align: left;
+}
+.container h2{    
+    padding: 2%;
+    font-size: 1.25vw;
+    text-align: end;
+}
+
+.redes{
+    width: 100%;    
+    background-color: black;  
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;      
+}
+
+.textoredes{
+    width: 100%;
+    padding: 60px 0px;
+    font-size: 2.7vw;    
+    letter-spacing: 0.30ch;
+    text-align: center;
+}
+.iconesredes{
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;    
+}
+    
+.iconesredes a{
+    width: 100%;    
+    display: flex;
+    justify-content: center;                
+    align-items: center;    
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    transition: all 0.5s ease 0s;    
+}
+.iconesredes a:hover{
+    background-color: #65ffc0;    
+}
+
+.iconesredes a img{
+    width: 38px;
+    height: 38px;
+    margin: 50%;
+}
+
+.rodape{
+    background-color: #3B3B3B;
+    padding: 20px 40px;
+    color: white;
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.rodape section a{
+    color: white;   
+    text-decoration: none;
+    font-size: 1vw;    
+}
+
+.rodape section a:hover{
+    color: #65ffc0
+}
+
+.suporte h2{
+    margin: 10px 0px;
+}
+
+.suporte a{
+    margin: 50px 0px;
+}
+
+.transparencia h2{
+    margin: 10px 0px;
+}
+
+
+.baixarapp h2{ 
+    margin: 10px 0px;
+    text-align: center;    
+  
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt"> 
+    <head>
+        <!-- metatags, metadados -> informações sobre a página -->
+        <meta charset="utf-8"> <!-- informa o sistema de caracteres -->
+        <title>Aula 3 - Javascript</title>
+        <meta name="description" content="Conhecendo Javascript">
+        <style>
+        *{
+            box-sizing: border-box;
+        }  
+        
+        body{
+            margin:0;
+            padding: 0;
+        }
+
+        header{
+            background-color: #bbbbbb;
+            margin: 0;
+        }
+
+        nav ul{
+            list-style: none;
+            display: block;
+            margin: 0;
+            padding: 16px;
+        }
+
+        nav ul li{
+            display: inline-block;
+            width: 32%;
+            text-align: center;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: #333333;
+        }
+
+        section, article{
+            display: inline-block;
+            width: 45%;
+            margin: 2%;
+            background-color: #cacaca;
+            vertical-align: top;
+            padding: 24px;
+            min-height: 400px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .opacidade{
+            opacity: 0.5;
+        }
+        </style>
+        <script src="arquivo.js" defer ></script> <!-- carregamento de arquivo externo, atributo defer faz o carregamento em paralelo -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script> 
+
+    </head>
+    <body>
+        <!-- conteudo que será visivel para o usuario -->
+        
+        <!-- elementos não semanticos (div e span) -> sem significado servem para envolver conteúdo -->
+        <!-- <div></div> -->
+        <!-- <span></span> -->
+
+        <!-- elementos semanticos -> tem significado -->
+        <header>
+            <!-- introdução ou navegação -->
+            <nav>
+                    <!-- area de navegação (menu) -->
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="modelo destaque">
+           
+            <!-- seção de conteudo -->
+            <h1 id="titulo">H1 título principal da página</h1><!-- pode ter somente 1 -->
+            <h2>Subtitulo h2</h2>
+            <h3>Subtitulo h3</h3>
+            <h6>Subtitulo vai do h2 ao h6</h6>
+
+                <p>No mundo atual, a valorização de fatores subjetivos desafia a
+                 capacidade de equalização das diversas correntes de pensamento.
+                <a href=""> Para saber mais sobre o mundo atual, clique aqui</a></p>
+
+            <b>Negrito</b><br/>
+            <strong>Negrito com Strong -> algo importante</strong><br/>
+            <i>Italico</i><br/>
+            <mark>Destacado</mark><br/>
+            <del>Riscado</del><br/>
+
+        </section>
+
+        <section id="contato" class="modelo">
+            <h2>Imagem, Link e Parágrafo</h2>
+            <img src="https://www.petz.com.br/blog/wp-content/uploads/2020/04/diferenca-entre-aves-e-passaros.jpg" alt="Descrição desta imagem">
+            <a href="https://uol.com.br" target="_blank">Link para noticia</a>
+            
+            <p>No mundo atual, a valorização de fatores subjetivos desafia a
+                capacidade de equalização das diversas correntes de pensamento.
+               <a href=""> Para saber mais sobre o mundo atual, clique aqui</a></p>
+        </section>
+
+        <section class="modelo">
+            <h2>Listas e âncora</h2>
+            <!-- ordenadas -->
+            <ol>
+                <li>Gato</li>
+                <li>Cachorro</li>
+                <li>Cobra</li>
+            </ol>
+
+            <!-- não ordenada -->
+            <ul>
+                <li>Gato</li>
+                <li>Cachorro</li>
+                <li>Cobra</li>
+            </ul>
+
+            <a href="#titulo">Link âncora voltar ao topo</a>
+
+        </section>
+        <article class="modelo">
+            <h2>Subtitulo</h2>
+            <!-- conteudo contido em si, direciona para outra área -->
+            <button id="bt_teste">Teste</button>
+        </article>
+       
+        <main>
+            <!-- area de conteudo principal -->
+        </main>
+
+        <footer>
+            <!-- rodapé -->
+        </footer>
+
+        <script>
+
+           window.onload = function(){
+
+                //comentario em linha
+
+                /* comentário 
+                em 
+                bloco*/
+
+                var idade = 31; // tipo numero
+                var altura = 1.60; // numero flutuante
+
+                var nome = "Thaís"; // string (texto)
+                var sobrenome = "Carneiro";
+
+                //operadores aritméticos
+                // +, - , *, /
+                // ++ (incrementar 1)
+                // -- (decrementar 1)
+
+                console.log(idade + altura);
+
+                //concatenar (reunir os conteudos)
+                var nomecompleto = nome + " " + sobrenome;
+                nome += " " + sobrenome;
+                console.log(nome);
+
+                //tipo de dado booleano
+                var x = true;
+                var y = false;
+
+                //objeto
+                var aluno = {nome: "Thais", sobrenome: "Carneiro", status: true, curso: {nome: "Front-end", turma: 123, inicio: "20/03/2023"}};
+                console.log(aluno);
+                console.log(aluno.nome);
+                console.log(aluno.curso.nome);
+                
+                //array (lista de itens, para armazenar vários valores)
+                var disciplinas = ["Front-End","UX/UI","Back-End", 789, ["A","B","C"]];
+                console.log(disciplinas);
+                console.log(disciplinas[0]);
+                console.log(disciplinas[4][2]);
+
+                disciplinas[0] = "Protótipo";
+                console.log(disciplinas[0]);
+
+                //const (constante) são variaveis que não mudam de valor
+                const nome3 = "Thais";
+
+                // var e let são variaveis que podem mudar de valor
+                var nome1 = "Lucas";
+                var nome1 = "Eduardo";
+                console.log(nome1);
+                
+                //variavel let não pode ser redeclarada
+                //não pode ser utilizada fora do seu contexto de declaração
+                let nome2 = "";
+                console.log(nome2);
+
+                //BLOCOS DE CONTROLE OU DE CONSTRUÇÃO
+                //operadores de condição
+                // >, <, >=, <=
+                // != (diferente)
+                // == (se os valores são iguais) 
+                // === compara o valor das variaveis e se o tipo de dados é o mesmo(data type)
+                // ! (pergunta se a condição não é verdadeira)
+                var a = 5;
+                if(a > 5){
+                    //se for verdadeiro
+                }else if(a < 5){
+                    //se for verdadeiro
+                }else{
+                    //não é verdadeiro
+                }
+
+                //operador de condição TERNÁRIO
+                var hora = 20;
+                var status = hora > 18 ? "noite" : "Noite";
+                /* exemplo da sintaxe: var status = (condicao) ? true : false;
+                if(hora > 18){
+                    status = "noite";
+                }else{
+                    status = "Dia";
+                }
+                */
+
+                //LOOP
+                //repetir uma tarefa igual várias vezes dependendo de um critério
+                for(var i = 0; i < disciplinas.length; i++){
+                    console.log(disciplinas[i]);
+                }
+
+            //DOM
+
+            //formas de acessar os elementos HTML
+                //por ID (retorna um único objeto)
+                var titulo = document.getElementById("titulo");
+                
+                //por TAG (retorna uma lista)
+                var paragrafos = document.getElementsByTagName("p");
+
+                //pelo atributo class
+                var secoes = document.getElementsByClassName("modelo");
+
+                //pelos seletores CSS
+                //querySelector captura o primeiro elemento que encontrar
+                var a = document.querySelector("a");
+                
+                //querySelectorAll captura uma lista de elementos
+                var links = document.querySelectorAll("a");
+                //NodeList -> retorna uma versão estática. Só é retornar com o QueryAll
+
+                //HTMLCollection -> retorna uma versão live do HTML. Todo o restante das consultas
+
+            //acessando os atributos HTML dos objetos
+                var img = document.getElementsByTagName("img");
+                var src = img[0].src;
+            //atribuir novo valor aos atributos HTML
+                img[0].alt = "Novo alt";
+                console.log(src);
+
+            //Modificar o estilo CSS dos elementos
+                //img[0].style.display = "none";
+            
+            //Modificar a classe dos elementos (sobrepor todas as classes que ele tiver)
+                //img[0].className = "opacidade";
+
+            //Forma mais gerenciavel de modificar as classes do elemento
+                img[0].classList.add("opacidade");
+                img[0].classList.remove("opacidade");
+
+
+                
+                var bt_teste = document.getElementById("bt_teste");
+
+                // Forma simplificada de chamar funções e; eventos
+                //bt_teste.onclick = algumafuncao;
+
+                //Usando o EventListener
+                //adicionar novo evento
+                //bt_teste.addEventListener("click", nomedafuncao);
+                //remover evento 
+                //bt_teste.removeEventListener("click", nomedafuncao);
+
+                var secao = document.getElementById("contato");
+                secao.addEventListener('click',mudaropacidade);
+                
+                bt_teste.addEventListener('click',mudaropacidadeSecao);
+
+                function mudaropacidade(){
+                    if(this.classList.contains("opacidade")){
+                        this.classList.remove("opacidade");
+                    }else{
+                       this.classList.add("opacidade");
+                    }
+                }
+
+                function mudaropacidadeSecao(){
+                    var secao = document.getElementById("contato");
+                    if(secao.classList.contains("opacidade")){
+                        secao.classList.remove("opacidade");
+                    }else{
+                       secao.classList.add("opacidade");
+                    }
+                }
+            
+                //inserir novos elementos HTML
+                var p = document.createElement("p");
+                //p.innerHTML = "texto normal <i>link</i>"; //inserir conteudo HTML
+                p.textContent = "alguma coisa link";
+                p.id = "novo-p";
+                p.className = "novo-p";
+
+                //document.body.appendChild(p);
+
+                var article = document.getElementsByTagName('article');
+                article[0].appendChild(p);
+
+                //remover elementos HTML da página
+                const para = document.getElementById('novo-p');
+                para.remove();
+
+
+
+
+
+           } 
+            
+
+           
+        </script>
+    </body>
+</html>
