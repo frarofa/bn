@@ -15,7 +15,7 @@
 
   <header>
 
-    <div class="container"><img src="#" alt=""></div>
+    <div class="containerheader">
 
     <!-- início da nav bar -->
 
@@ -27,14 +27,14 @@
         </a>
     </div>
     <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn"> &#9776 Menu</button>           
+        <button onclick="myFunction()" class="dropbtn"> &#9776</button>           
         <div id="drop" class="dropdown-content">
             <div class="show">
-                <a href="#">Sobre</a>        
+                <a href="#">Sobre</a><br>    
                 <a href="#">Fale Conosco</a>
                 <a href="#">Login</a>
                 <a href="#">Download</a>
-                <a href="#">Política de Privacidade</a>
+                <a href="#">Privacy</a>
             </div>
         </div>
     </div>    
@@ -105,46 +105,55 @@
         <h2 class="suaempresanocomando">sua empresa no comando das <br>últimas tendências do <br>mercado!</h2>
         
         <div class="caixabolinhas">
+
           <ul class="bolinhas">
-          
-            <div class="bolinha1">
-              <li><img src="/imgs/vantagemcomp.svg" alt="bolinha"></li>
-                <li class="titulobolinha"><p><strong>Vantagem Competitiva</strong></p></li>
-                <li class="textobolinha"><p>aos que têm acesso à esta ferramenta poderosa em mãos.</p></li>
-            </div>
-          
-            <div class="bolinha2">
-              <li><img src="/imgs/interesses.svg" alt="bolinha"></li>
-               <li class="titulobolinha"><p><strong>Interesses</strong></p></li>
-               <li class="textobolinha"><p>fique à vontade de selecionar todos os seus interesses!</p></li>
+
+            <div class="umdois">
+              <div class="bolinha1">
+                <li><img src="/imgs/vantagemcomp.svg" alt="bolinha"></li>
+                  <li class="titulobolinha"><p><strong>Vantagem Competitiva</strong></p></li>
+                  <li class="textobolinha"><p>aos que têm acesso à esta ferramenta poderosa em mãos.</p></li>
+              </div>
+            
+              <div class="bolinha2">
+                <li><img src="/imgs/interesses.svg" alt="bolinha"></li>
+                <li class="titulobolinha"><p><strong>Interesses</strong></p></li>
+                <li class="textobolinha"><p>fique à vontade de selecionar todos os seus interesses!</p></li>
+              </div>
             </div>
 
-            <div class="bolinha3">
-             <li><img src="/imgs/saibaantes.svg" alt="bolinha"></li>
-                <li class="titulobolinha"><p><strong>Saiba antes de todos</strong></p></li>
-                <li class="textobolinha"><p>receba suas notícias no momento que elas são publicadas!</p></li>
-           </div>
- 
-            <div class="bolinha4">
-             <li><img src="/imgs/calendario.svg" alt="bolinha"></li>
-                <li class="titulobolinha"><p><strong>Calendário</strong></p></li>
-                <li class="textobolinha"><p>programe-se e saiba todas as datas comerciais, eventos e outros no Brasil!</p></li>
+            <div class="tresquatro">
+              <div class="bolinha3">
+              <li><img src="/imgs/saibaantes.svg" alt="bolinha"></li>
+                  <li class="titulobolinha"><p><strong>Saiba antes de todos</strong></p></li>
+                  <li class="textobolinha"><p>receba suas notícias no momento que elas são publicadas!</p></li>
+            </div>
+  
+              <div class="bolinha4">
+              <li><img src="/imgs/calendario.svg" alt="bolinha"></li>
+                  <li class="titulobolinha"><p><strong>Calendário</strong></p></li>
+                  <li class="textobolinha"><p>programe-se e saiba todas as datas comerciais, eventos e outros no Brasil!</p></li>
+              </div>
             </div>
 
-            <div class="bolinha5">
-              <li><img src="/imgs/aportes.svg" alt="bolinha"></li>
-                <li class="titulobolinha"><p><strong>Aportes</strong></p></li>
-                <li class="textobolinha"><p>fique por dentro dos investimentos!</p></li>
-            </div>
+            <div class="cincoseis">
+              <div class="bolinha5">
+                <li><img src="/imgs/aportes.svg" alt="bolinha"></li>
+                  <li class="titulobolinha"><p><strong>Aportes</strong></p></li>
+                  <li class="textobolinha"><p>fique por dentro dos investimentos!</p></li>
+              </div>
 
-            <div class="bolinha6">
-              <li><img src="/imgs/entreoutros.svg" alt="bolinha"></li>
-                <li class="titulobolinha"><p><strong>Entre outros!</strong></p></li>
-                <li class="textobolinha"><p>bolsa de valores, crypto moedas, redes sociais, editoriais, e mais!</p></li>
+              <div class="bolinha6">
+                <li><img src="/imgs/entreoutros.svg" alt="bolinha"></li>
+                  <li class="titulobolinha"><p><strong>Entre outros!</strong></p></li>
+                  <li class="textobolinha"><p>bolsa de valores, crypto moedas, redes sociais, editoriais, e mais!</p></li>
             </div>
+          </div>
           
           </ul>
+
         </div>
+
       </div>
     </section>
 
@@ -154,6 +163,67 @@
     
       <!-- carrossel -->
       
+      <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+          <li id="carousel__slide1"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper">
+              <a href="#carousel__slide4"
+                 class="carousel__prev">Go to last slide</a>
+              <a href="#carousel__slide2"
+                 class="carousel__next">Go to next slide</a>
+            </div>
+          </li>
+          <li id="carousel__slide2"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1"
+               class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide3"
+               class="carousel__next">Go to next slide</a>
+          </li>
+          <li id="carousel__slide3"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2"
+               class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide4"
+               class="carousel__next">Go to next slide</a>
+          </li>
+          <li id="carousel__slide4"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3"
+               class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide1"
+               class="carousel__next">Go to first slide</a>
+          </li>
+        </ol>
+        <aside class="carousel__navigation">
+          <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide1"
+                 class="carousel__navigation-button">Go to slide 1</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide2"
+                 class="carousel__navigation-button">Go to slide 2</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide3"
+                 class="carousel__navigation-button">Go to slide 3</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide4"
+                 class="carousel__navigation-button">Go to slide 4</a>
+            </li>
+          </ol>
+        </aside>
+      </section>
       
       <!-- fim do carrossel -->
     </section>
